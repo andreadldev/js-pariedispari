@@ -25,13 +25,9 @@ if
             console.log(`Somma tra i due numeri: ${sum}`);
 
             if 
-                (isEven(sum) === true && pick === "pari") {
-                console.log("Il giocatore ha vinto");
-                
+                (isEven(sum) === true && pick === "pari" || isEven(sum) === false && pick === "dispari") {
+                console.log("Il giocatore ha vinto");          
             }
-            else if 
-                (isEven(sum) === false && pick === "dispari")
-                {console.log("Il giocatore ha vinto");}
 
             else 
                 {console.log("Il computer ha vinto")};
